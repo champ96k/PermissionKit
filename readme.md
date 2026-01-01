@@ -3,7 +3,6 @@
   <img src="screenshot/logo.png" alt="PermissionKit Logo"/>
 </p>
 
-<h1 align="center">PermissionKit</h1>
 
 <p align="center">
   A modern, single-dependency Android runtime permission SDK<br/>
