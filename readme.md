@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="screenshot/logo.png" alt="PermissionKit Logo" width="180"/>
+  <img src="screenshot/logo.png" alt="PermissionKit Logo"/>
 </p>
 
 <h1 align="center">PermissionKit</h1>
@@ -172,7 +172,7 @@ Copyright (c) 2026 Champ96k
 
 ## 👨‍💻 Author
 
-Built with ❤️ by **Tushar Nikam (Champ96k)**
+Built with ❤️ by **Tushar Nikam**
 
 ---
 
