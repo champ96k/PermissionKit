@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.champ96k.sample"
-        minSdk = 21
+        minSdk = 23
         //noinspection OldTargetApi
         targetSdk = 35
         versionCode = 1
