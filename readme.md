@@ -1,12 +1,25 @@
 
 <p align="center">
-  <img src="screenshot/logo.png" alt="PermissionKit Logo"/>
+  <img src="screenshot/logo.png" alt="PermissionKit Logo" width="150"/>
 </p>
 
+<h1 align="center">PermissionKit</h1>
 
 <p align="center">
   A modern, single-dependency Android runtime permission SDK<br/>
-  for <b>Activity</b>, <b>Fragment</b>, and <b>Jetpack Compose</b>
+  for <b>Activity</b>, <b>Fragment</b>, and <b>Jetpack Compose</b>.
+</p>
+
+<p align="center">
+  <a href="https://search.maven.org/artifact/com.champ96k/permissionkit"><img src="https://img.shields.io/maven-central/v/com.champ96k/permissionkit.svg" alt="Maven Central"/></a>
+  <a href="https://android-arsenal.com/api?level=21"><img src="https://img.shields.io/badge/API-21%2B-orange.svg?style=flat" alt="API"/></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"/></a>
+</p>
+
+<p align="center">
+  <img src="screenshot/video.gif" width="280" alt="PermissionKit Demo GIF"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshot/screenshot.png" width="280" alt="PermissionKit Screenshot"/>
 </p>
 
 ---
