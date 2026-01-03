@@ -1,8 +1,14 @@
+import org.gradle.api.publish.maven.MavenPublication
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("maven-publish")
 }
+
+group = "com.champ96k"
+version = "1.0.0"
 
 android {
     namespace = "com.champ96k.permissionkit.compose"
@@ -10,7 +16,6 @@ android {
 
     defaultConfig {
         minSdk = 21
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -37,7 +42,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -52,4 +56,19 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(project(":permissionkit-core"))
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.champ96k"
+            artifactId = "permissionkit-compose"
+            version = "1.0.0"
+            
+            val publication = this
+            project.afterEvaluate {
+                publication.from(components["release"])
+            }
+        }
+    }
 }
