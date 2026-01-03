@@ -7,28 +7,31 @@ import com.champ96k.permissionkit.compose.rememberPermissionRequester
 import com.champ96k.permissionkit.core.PermissionResult
 
 /**
- * PermissionKit public entry point.
+ * PermissionKit is the single public entry point for requesting
+ * Android runtime permissions.
  *
- * This is the ONLY class users need.
+ * Supports Activity, Fragment, and Jetpack Compose.
  */
 object PermissionKit {
 
     /**
-     * Start permission request from Activity
+     * Create a permission request bound to an Activity lifecycle.
      */
-    fun from(activity: ComponentActivity): ActivityRequestBuilder {
-        return ActivityRequestBuilder(activity)
-    }
+    @Suppress("unused")
+    fun from(activity: ComponentActivity): ActivityRequestBuilder =
+        ActivityRequestBuilder(activity)
 
     /**
-     * Start permission request from Fragment
+     * Create a permission request bound to a Fragment lifecycle.
      */
-    fun from(fragment: Fragment): FragmentRequestBuilder {
-        return FragmentRequestBuilder(fragment)
-    }
+    @Suppress("unused")
+    fun from(fragment: Fragment): FragmentRequestBuilder =
+        FragmentRequestBuilder(fragment)
 
     /**
-     * Permission request for Jetpack Compose
+     * Create a permission requester for Jetpack Compose.
+     *
+     * @return A lambda that triggers the permission request.
      */
     @Composable
     fun rememberRequester(
