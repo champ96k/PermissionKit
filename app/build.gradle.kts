@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.champ96k.permissionkit"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.champ96k.permissionkit"

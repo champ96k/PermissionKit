@@ -12,7 +12,7 @@ version = "1.0.0"
 
 android {
     namespace = "com.champ96k.permissionkit.compose"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 21
